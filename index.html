@@ -2,636 +2,634 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet" />
-    <title>Document</title>
-
-    <style>
-        :root {
-            color-scheme: light dark !important;
-            supported-color-schemes: light dark !important;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            background-color: #eceff1 !important;
-            min-height: 100vh !important;
-            padding-left: 16px !important;
-            padding-right: 16px !important;
-        }
-
-        .glavniy-logo {
-            text-align: center !important;
-            margin-bottom: 20px !important;
-            margin-top: 40px !important;
-        }
-
-        .glavniy-logo img {
-            text-align: center !important;
-            width: 150px !important;
-        }
-
-        .logoBoxTell {
-            isolation: isolate !important;
-            /* Creates a new stacking context */
-        }
-
-        .logoTell {
-            mix-blend-mode: difference !important;
-        }
-
-        .container {
-            max-width: 520px !important;
-            margin-left: auto !important;
-            margin-right: auto !important;
-            background-color: white !important;
-            padding: 20px !important;
-            margin-top: 20px !important;
-            width: 100%;
-        }
-
-        .container-2 {
-            max-width: 552px !important;
-            margin-left: auto !important;
-            margin-right: auto !important;
-            background-color: #eceff1 !important;
-            padding: 20px !important;
-            width: 100%;
-        }
-
-        .container-margin {
-            margin-bottom: 20px !important;
-        }
-
-        .box-logo {
-            width: 60px !important;
-            height: 60px !important;
-            border-radius: 50% !important;
-            background-color: #187ac914;
-            margin: 0 auto !important;
-            margin-bottom: 20px !important;
-            text-align: center !important;
-        }
-
-        .box-logo img {
-            line-height: 100% !important;
-            margin-top: 15px !important;
-            width: 30px !important;
-            height: 30px !important;
-        }
-
-        .box-title {
-            color: rgba(0, 0, 0, 0.87) !important;
-            text-align: center !important;
-            font-family: "Noto Sans", sans-serif !important;
-            font-size: 24px !important;
-            font-style: normal !important;
-            font-weight: 600 !important;
-            line-height: normal !important;
-            margin-bottom: 16px !important;
-        }
-
-        .social-title {
-            color: rgba(0, 0, 0, 0.87) !important;
-            text-align: center !important;
-            font-family: "Noto Sans", sans-serif !important;
-            font-size: 24px !important;
-            font-style: normal !important;
-            font-weight: 600 !important;
-            line-height: normal !important;
-            margin-bottom: 16px !important;
-        }
-
-        .box-texts {
-            color: rgba(0, 0, 0, 0.6) !important;
-            font-size: 16px !important;
-            font-style: normal !important;
-            font-weight: 400 !important;
-            line-height: normal !important;
-            text-align: center;
-            font-family: sans-serif;
-            margin-bottom: 16px;
-        }
-
-        .social-texts {
-            color: rgba(0, 0, 0, 0.6) !important;
-            font-size: 16px !important;
-            font-style: normal !important;
-            font-weight: 400 !important;
-            line-height: normal !important;
-            text-align: center !important;
-            font-family: sans-serif !important;
-            margin-bottom: 20px !important;
-        }
-
-        .box-texts b {
-            color: rgba(0, 0, 0, 0.6) !important;
-        }
-
-        .box-texts-2 {
-            color: rgba(0, 0, 0, 0.6) !important;
-            font-size: 16px !important;
-            font-style: normal !important;
-            font-weight: 400 !important;
-            line-height: normal !important;
-            text-align: center;
-            font-family: sans-serif;
-            margin-bottom: 16px;
-        }
-
-        .box-texts-3 {
-            color: rgba(0, 0, 0, 0.6) !important;
-            font-size: 14px !important;
-            font-style: normal !important;
-            font-weight: 400 !important;
-            line-height: normal !important;
-            text-align: center;
-            font-family: sans-serif;
-        }
-
-        .box-texts-3 a {
-            color: #187ac9 !important;
-            text-decoration: none !important;
-            font-weight: 500 !important;
-        }
-
-        .social-img-1 {
-            padding-right: 20px !important;
-        }
-
-        .social-img-1 a {
-            display: block !important;
-            width: 100% !important;
-            margin-right: auto;
-        }
-
-        .social-img-1 a img {
-            display: block !important;
-            width: 100% !important;
-        }
-
-        .social-img-2 {
-            padding-left: 20px !important;
-        }
-
-        .social-img-2 a {
-            display: block !important;
-            width: 100% !important;
-        }
-
-        .social-img-2 a img {
-            display: block !important;
-            width: 100% !important;
-        }
-
-        .footer-logo {
-            width: 80px !important;
-            margin-left: -6px;
-            margin-bottom: 20px !important;
-        }
-
-        .footer-col-1 {
-            max-width: 126px !important;
-            padding-right: 40px !important;
-        }
-
-        .footer-col-2 {
-            max-width: 194px !important;
-        }
-
-        .footer-col-2-tr {
-            display: none;
-        }
-
-        .footer-row {
-            vertical-align: baseline !important;
-            margin-bottom: 20px !important;
-        }
-
-        .footer-col-title {
-            font-family: "Noto Sans", sans-serif !important;
-            font-size: 16px !important;
-            font-style: normal !important;
-            font-weight: 400 !important;
-            line-height: 150% !important;
-            /* 24px */
-            letter-spacing: 0.15px !important;
-            margin-bottom: 8px !important;
-            font-feature-settings: "clig" off, "liga" off !important;
-            color: #000000de !important;
-            margin-bottom: 8px !important;
-        }
-
-        .footer-col-text {
-            color: var(--text-primary, rgba(0, 0, 0, 0.87)) !important;
-            font-feature-settings: "clig" off, "liga" off !important;
-            font-family: "Noto Sans", sans-serif !important;
-            font-size: 12px !important;
-            font-style: normal !important;
-            font-weight: 400 !important;
-            line-height: 166% !important;
-            /* 19.92px */
-            letter-spacing: 0.4px !important;
-        }
-
-        .footer-col-text-tel {
-            color: var(--text-primary, rgba(0, 0, 0, 0.87));
-            font-feature-settings: "clig" off, "liga" off;
-            font-family: "Noto Sans", sans-serif;
-            font-size: 12px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 166%;
-            /* 19.92px */
-            letter-spacing: 0.4px;
-        }
-
-        .footer-col-text-email a {
-            text-decoration: none;
-            color: var(--secondary-main, #187ac9);
-            font-feature-settings: "clig" off, "liga" off;
-            font-family: "Noto Sans", sans-serif;
-            font-size: 12px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 166%;
-            /* 19.92px */
-            letter-spacing: 0.4px;
-        }
-
-        .footer-col-row img {
-            margin-top: 1px;
-            margin-right: 8px;
-            display: block;
-        }
-
-        .footer-col-row .footer-col-text-email img {
-            margin-top: 3px;
-            margin-right: 8px;
-            display: block;
-        }
-
-        .footer-social img {
-            height: 24px !important;
-            display: block;
-        }
-
-        .footer-social td {
-            padding-right: 24px !important;
-        }
-
-        .footer-text-full {
-            color: var(--text-primary, rgba(0, 0, 0, 0.87)) !important;
-            font-feature-settings: "clig" off, "liga" off !important;
-            font-family: "Noto Sans", sans-serif !important;
-            font-size: 12px !important;
-            font-style: normal !important;
-            font-weight: 400 !important;
-            line-height: 166% !important;
-            /* 19.92px */
-            letter-spacing: 0.4px !important;
-            margin-bottom: 20px;
-        }
-
-        .logoTell {}
-
-        /* Styles for dark mode */
-
-        /* Styles for light mode */
-        @media (prefers-color-scheme: light) {
-            .logo {
-                content: url('https://ci3.googleusercontent.com/meips/ADKq_NYdPhhDJdumiEwcbpjsYscw95JfEMlKykO5enyiagFf8FHSfxCyCGucTi-fxdLw0JdUu3Tpr1FZ1sjuXp47a5iDYYKb2VXBB8fUUcgR-Fu6ONVzvgglMvh0EAQk3mRPjsv3ooVm2um36iPtAiijUJwUYXbxw6yFaL7EXaiiLZewfYSGT2yxmKQRKdJGMU2HosP1ghms1rAFiQybyFm69gOp7dlxCC4=s0-d-e1-ft#https://efonaub.stripocdn.email/content/guids/CABINET_7b786ee7e73fcee9edab2500605d2e96f6a0c9894b10fa85bdaded9b74773f47/images/lightlogo_kCj.png') !important;
-            }
-        }
-
-        @media (prefers-color-scheme: dark) {
-            .logo {
-                content: url('https://link-img-eight.vercel.app/ReportGmailerrorredOutlined%20(1).png') !important;
-            }
-        }
-
-
-        @media screen and (max-width: 540px) {
-            .container {
-                padding: 12px !important;
-            }
-
-            .glavniy-logo img {
-                width: 100px !important;
-
-            }
-
-            .box-logo {
-                width: 40px !important;
-                height: 40px !important;
-                margin-bottom: 20px !important;
-            }
-
-            .box-logo img {
-                margin-top: 10px !important;
-                width: 20px !important;
-                height: 20px !important;
-            }
-
-            .box-title {
-                font-size: 20px !important;
-                font-weight: 600 !important;
-                margin-bottom: 16px !important;
-            }
-
-            .box-texts {
-                font-weight: 400 !important;
-            }
-
-            .box-texts {
-                margin-bottom: 20px !important;
-            }
-
-            .social-img-1 {
-                padding-right: 5.5px !important;
-            }
-
-            .social-img-2 {
-                padding-left: 5.5px !important;
-            }
-
-            .social-texts {
-                color: #5e5e5e !important;
-                font-size: 14px !important;
-                font-style: normal !important;
-                font-weight: 400 !important;
-                line-height: normal !important;
-                text-align: center;
-                font-family: sans-serif;
-                margin-bottom: 12px;
-            }
-
-            .social-title {
-                color: rgba(0, 0, 0, 0.87) !important;
-                text-align: center !important;
-                font-family: "Noto Sans", sans-serif !important;
-                font-size: 20px !important;
-                font-style: normal !important;
-                font-weight: 600 !important;
-                line-height: normal !important;
-                margin-bottom: 8px !important;
-            }
-
-            .footer-col-2 {
-                display: none;
-            }
-
-            .footer-col-2-tr {
-                display: block;
-            }
-
-            .footer-col-2-tr .footer-col-title {
-                margin-bottom: 8px !important;
-            }
-
-            .hidden-text {
-                display: none;
-            }
-
-            .container-2 {
-                padding: 12px 0 !important;
-            }
-
-            .footer-text-full {
-                font-size: 12px !important;
-            }
-
-            .footer-col-text {
-                margin-bottom: 12px !important;
-                font-size: 12px !important;
-            }
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <title>Document</title>
+
+  <style>
+    :root {
+      color-scheme: light dark !important;
+      supported-color-schemes: light dark !important;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #eceff1 !important;
+      min-height: 100vh !important;
+      padding-left: 16px !important;
+      padding-right: 16px !important;
+    }
+
+    .glavniy-logo {
+      text-align: center !important;
+      margin-bottom: 20px !important;
+      margin-top: 40px !important;
+    }
+
+    .glavniy-logo img {
+      text-align: center !important;
+      width: 150px !important;
+    }
+
+    .logoBoxTell {
+      isolation: isolate !important;
+      /* Creates a new stacking context */
+    }
+
+    .logoTell {
+      mix-blend-mode: difference !important;
+    }
+
+    .container {
+      max-width: 520px !important;
+      margin-left: auto !important;
+      margin-right: auto !important;
+      background-color: white !important;
+      padding: 20px !important;
+      margin-top: 20px !important;
+      width: 100%;
+    }
+
+    .container-2 {
+      max-width: 552px !important;
+      margin-left: auto !important;
+      margin-right: auto !important;
+      background-color: #eceff1 !important;
+      padding: 20px !important;
+      width: 100%;
+    }
+
+    .container-margin {
+      margin-bottom: 20px !important;
+    }
+
+    .box-logo {
+      width: 60px !important;
+      height: 60px !important;
+      border-radius: 50% !important;
+      background-color: #187ac914;
+      margin: 0 auto !important;
+      margin-bottom: 20px !important;
+      text-align: center !important;
+    }
+
+    .box-logo img {
+      line-height: 100% !important;
+      margin-top: 15px !important;
+      width: 30px !important;
+      height: 30px !important;
+    }
+
+    .box-title {
+      color: rgba(0, 0, 0, 0.87) !important;
+      text-align: center !important;
+      font-family: "Noto Sans", sans-serif !important;
+      font-size: 24px !important;
+      font-style: normal !important;
+      font-weight: 600 !important;
+      line-height: normal !important;
+      margin-bottom: 16px !important;
+    }
+
+    .social-title {
+      color: rgba(0, 0, 0, 0.87) !important;
+      text-align: center !important;
+      font-family: "Noto Sans", sans-serif !important;
+      font-size: 24px !important;
+      font-style: normal !important;
+      font-weight: 600 !important;
+      line-height: normal !important;
+      margin-bottom: 16px !important;
+    }
+
+    .box-texts {
+      color: rgba(0, 0, 0, 0.6) !important;
+      font-size: 16px !important;
+      font-style: normal !important;
+      font-weight: 400 !important;
+      line-height: normal !important;
+      text-align: center;
+      font-family: sans-serif;
+      margin-bottom: 16px;
+    }
+
+    .social-texts {
+      color: rgba(0, 0, 0, 0.6) !important;
+      font-size: 16px !important;
+      font-style: normal !important;
+      font-weight: 400 !important;
+      line-height: normal !important;
+      text-align: center !important;
+      font-family: sans-serif !important;
+      margin-bottom: 20px !important;
+    }
+
+    .box-texts b {
+      color: rgba(0, 0, 0, 0.6) !important;
+    }
+
+    .box-texts-2 {
+      color: rgba(0, 0, 0, 0.6) !important;
+      font-size: 16px !important;
+      font-style: normal !important;
+      font-weight: 400 !important;
+      line-height: normal !important;
+      text-align: center;
+      font-family: sans-serif;
+      margin-bottom: 16px;
+    }
+
+    .box-texts-3 {
+      color: rgba(0, 0, 0, 0.6) !important;
+      font-size: 14px !important;
+      font-style: normal !important;
+      font-weight: 400 !important;
+      line-height: normal !important;
+      text-align: center;
+      font-family: sans-serif;
+    }
+
+    .box-texts-3 a {
+      color: #187ac9 !important;
+      text-decoration: none !important;
+      font-weight: 500 !important;
+    }
+
+    .social-img-1 {
+      padding-right: 20px !important;
+    }
+
+    .social-img-1 a {
+      display: block !important;
+      width: 100% !important;
+      margin-right: auto;
+    }
+
+    .social-img-1 a img {
+      display: block !important;
+      width: 100% !important;
+    }
+
+    .social-img-2 {
+      padding-left: 20px !important;
+    }
+
+    .social-img-2 a {
+      display: block !important;
+      width: 100% !important;
+    }
+
+    .social-img-2 a img {
+      display: block !important;
+      width: 100% !important;
+    }
+
+    .footer-logo {
+      width: 80px !important;
+      margin-left: -6px;
+      margin-bottom: 20px !important;
+    }
+
+    .footer-col-1 {
+      max-width: 126px !important;
+      padding-right: 40px !important;
+    }
+
+    .footer-col-2 {
+      max-width: 194px !important;
+    }
+
+    .footer-col-2-tr {
+      display: none;
+    }
+
+    .footer-row {
+      vertical-align: baseline !important;
+      margin-bottom: 20px !important;
+    }
+
+    .footer-col-title {
+      font-family: "Noto Sans", sans-serif !important;
+      font-size: 16px !important;
+      font-style: normal !important;
+      font-weight: 400 !important;
+      line-height: 150% !important;
+      /* 24px */
+      letter-spacing: 0.15px !important;
+      margin-bottom: 8px !important;
+      font-feature-settings: "clig" off, "liga" off !important;
+      color: #000000de !important;
+      margin-bottom: 8px !important;
+    }
+
+    .footer-col-text {
+      color: var(--text-primary, rgba(0, 0, 0, 0.87)) !important;
+      font-feature-settings: "clig" off, "liga" off !important;
+      font-family: "Noto Sans", sans-serif !important;
+      font-size: 12px !important;
+      font-style: normal !important;
+      font-weight: 400 !important;
+      line-height: 166% !important;
+      /* 19.92px */
+      letter-spacing: 0.4px !important;
+    }
+
+    .footer-col-text-tel {
+      color: var(--text-primary, rgba(0, 0, 0, 0.87));
+      font-feature-settings: "clig" off, "liga" off;
+      font-family: "Noto Sans", sans-serif;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 166%;
+      /* 19.92px */
+      letter-spacing: 0.4px;
+    }
+
+    .footer-col-text-email a {
+      text-decoration: none;
+      color: var(--secondary-main, #187ac9);
+      font-feature-settings: "clig" off, "liga" off;
+      font-family: "Noto Sans", sans-serif;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 166%;
+      /* 19.92px */
+      letter-spacing: 0.4px;
+    }
+
+    .footer-col-row img {
+      margin-top: 1px;
+      margin-right: 8px;
+      display: block;
+    }
+
+    .footer-col-row .footer-col-text-email img {
+      margin-top: 3px;
+      margin-right: 8px;
+      display: block;
+    }
+
+    .footer-social img {
+      height: 24px !important;
+      display: block;
+    }
+
+    .footer-social td {
+      padding-right: 24px !important;
+    }
+
+    .footer-text-full {
+      color: var(--text-primary, rgba(0, 0, 0, 0.87)) !important;
+      font-feature-settings: "clig" off, "liga" off !important;
+      font-family: "Noto Sans", sans-serif !important;
+      font-size: 12px !important;
+      font-style: normal !important;
+      font-weight: 400 !important;
+      line-height: 166% !important;
+      /* 19.92px */
+      letter-spacing: 0.4px !important;
+      margin-bottom: 20px;
+    }
+
+    .logoTell {}
+
+    /* Styles for dark mode */
+
+    /* Styles for light mode */
+    @media (prefers-color-scheme: light) {
+      .logo {
+        content: url('https://ci3.googleusercontent.com/meips/ADKq_NYdPhhDJdumiEwcbpjsYscw95JfEMlKykO5enyiagFf8FHSfxCyCGucTi-fxdLw0JdUu3Tpr1FZ1sjuXp47a5iDYYKb2VXBB8fUUcgR-Fu6ONVzvgglMvh0EAQk3mRPjsv3ooVm2um36iPtAiijUJwUYXbxw6yFaL7EXaiiLZewfYSGT2yxmKQRKdJGMU2HosP1ghms1rAFiQybyFm69gOp7dlxCC4=s0-d-e1-ft#https://efonaub.stripocdn.email/content/guids/CABINET_7b786ee7e73fcee9edab2500605d2e96f6a0c9894b10fa85bdaded9b74773f47/images/lightlogo_kCj.png') !important;
+      }
+    }
+
+    @media (prefers-color-scheme: dark) {
+      .logo {
+        content: url('https://link-img-eight.vercel.app/ReportGmailerrorredOutlined%20(1).png') !important;
+      }
+    }
+
+
+    @media screen and (max-width: 540px) {
+      .container {
+        padding: 12px !important;
+      }
+
+      .glavniy-logo img {
+        width: 100px !important;
+
+      }
+
+      .box-logo {
+        width: 40px !important;
+        height: 40px !important;
+        margin-bottom: 20px !important;
+      }
+
+      .box-logo img {
+        margin-top: 10px !important;
+        width: 20px !important;
+        height: 20px !important;
+      }
+
+      .box-title {
+        font-size: 20px !important;
+        font-weight: 600 !important;
+        margin-bottom: 16px !important;
+      }
+
+      .box-texts {
+        font-weight: 400 !important;
+      }
+
+      .box-texts {
+        margin-bottom: 20px !important;
+      }
+
+      .social-img-1 {
+        padding-right: 5.5px !important;
+      }
+
+      .social-img-2 {
+        padding-left: 5.5px !important;
+      }
+
+      .social-texts {
+        color: #5e5e5e !important;
+        font-size: 14px !important;
+        font-style: normal !important;
+        font-weight: 400 !important;
+        line-height: normal !important;
+        text-align: center;
+        font-family: sans-serif;
+        margin-bottom: 12px;
+      }
+
+      .social-title {
+        color: rgba(0, 0, 0, 0.87) !important;
+        text-align: center !important;
+        font-family: "Noto Sans", sans-serif !important;
+        font-size: 20px !important;
+        font-style: normal !important;
+        font-weight: 600 !important;
+        line-height: normal !important;
+        margin-bottom: 8px !important;
+      }
+
+      .footer-col-2 {
+        display: none;
+      }
+
+      .footer-col-2-tr {
+        display: block;
+      }
+
+      .footer-col-2-tr .footer-col-title {
+        margin-bottom: 8px !important;
+      }
+
+      .hidden-text {
+        display: none;
+      }
+
+      .container-2 {
+        padding: 12px 0 !important;
+      }
+
+      .footer-text-full {
+        font-size: 12px !important;
+      }
+
+      .footer-col-text {
+        margin-bottom: 12px !important;
+        font-size: 12px !important;
+      }
+    }
+  </style>
 </head>
 
 <body style="background-color: #eceff1">
-    <br />
-    <table border="0" cellpadding="0" cellspacing="0" width="100%">
-        <tr class="glavniy-logo">
-            <td>
-                <img class="dark-img"
-                    src="https://ci3.googleusercontent.com/meips/ADKq_NYdPhhDJdumiEwcbpjsYscw95JfEMlKykO5enyiagFf8FHSfxCyCGucTi-fxdLw0JdUu3Tpr1FZ1sjuXp47a5iDYYKb2VXBB8fUUcgR-Fu6ONVzvgglMvh0EAQk3mRPjsv3ooVm2um36iPtAiijUJwUYXbxw6yFaL7EXaiiLZewfYSGT2yxmKQRKdJGMU2HosP1ghms1rAFiQybyFm69gOp7dlxCC4=s0-d-e1-ft#https://efonaub.stripocdn.email/content/guids/CABINET_7b786ee7e73fcee9edab2500605d2e96f6a0c9894b10fa85bdaded9b74773f47/images/lightlogo_kCj.png"
-                    alt="" title="light" />
-            </td>
-        </tr>
-
-        <tr>
-            <td align="center">
-                <table border="0" cellpadding="0" cellspacing="0" class="container">
-                    <!-- Your Email Content Here -->
-                    <tr>
-                        <td>
-                            <div class="box-logo" style="margin: 0; padding: 0; text-align: center">
-                                <img src="CoPresentOutlined.png" />
-                            </div>
-                            <h2 class="box-title">
-                                Login Recovery for banking services app provided by Netevia!
-                            </h2>
-                            <p class="box-texts">
-                                Dear <b>[Applicant Name],</b> <br /><br />
-
-
-                                Your login to sign in to our banking services app provided by Netevia is: 
-                               <b> [Add login info]</b>
-                            </p>
-                            <p class="box-texts-2">
-                                Sincerely, <br />
-                                Netevia Team
-                            </p>
-                            <p class="box-texts-3">
-                                If you have any questions, don't hesitate to contact us at
-                                <br />
-                                <a href="tel:855-479-4411">855-479-4411</a> or email at
-                                <a href="mailto: card@netevia.com">card@netevia.com.</a>
-                                <br />
-                                Our Customer Services Team is available Monday-Friday from
-                                9:00 am to 8:00 pm EST.
-                            </p>
-                        </td>
-                    </tr>
-                    <!-- End of Email Content -->
-                </table>
-            </td>
-        </tr>
-
-        <tr>
-            <td align="center">
-                <table border="0" cellpadding="0" cellspacing="0" class="container container-margin">
-                    <!-- Your Email Content Here -->
-                    <tr>
-                        <td colspan="2">
-                            <h2 class="social-title">Get the Netevia app!</h2>
-                            <p class="social-texts">
-                                Get the most of Netevia by installing our mobile app.
-                            </p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="social-img-1">
-                            <a target="_blank" href="#">
-                                <img
-                                    src="https://ci3.googleusercontent.com/meips/ADKq_NaayLpuC8nxlD5E5UKD5aet6Fkt4CHELlR2JJ44LCKOjcfsGjkLpGhfNyrDZ5Tgj3rY2SwVKDhv4vXcHabw0OCDgStmH6znMyxFw6FHpEjVIfBS_oIC7XSlGiMKTREoufr_GE6iC7bIRfNPBhxoaE9bBi0HpXyQjDEncJZU7SklfNARwOwxRgocoXWshQvg4gtXHEmzfFXGBWfd00geugx7=s0-d-e1-ft#https://efonaub.stripocdn.email/content/guids/CABINET_7b786ee7e73fcee9edab2500605d2e96f6a0c9894b10fa85bdaded9b74773f47/images/appstore.png" />
-                            </a>
-                        </td>
-                        <td class="social-img-2">
-                            <a target="_blank" href="#">
-                                <img
-                                    src="https://ci3.googleusercontent.com/meips/ADKq_NbwMbWqYa44Yky_bhRRU9se2WU62jbq1SUYLQob38BZO3N2mfFRoOwfJQaf0sriFVnsmEx_qnXI8oGYp2DfRzlLJiLfL8BFJM9ywytcdLDSJRHRX_tbp4b-YTG2drh9aTKvRbV9j4vt-RCJJWxenjB52FQ_HYctYZhwEpNQXFVi8eo-5LPvCJiY1X3ZlBqEMOXLsnIgf5Vk_2GI-AkIoRKRGas=s0-d-e1-ft#https://efonaub.stripocdn.email/content/guids/CABINET_7b786ee7e73fcee9edab2500605d2e96f6a0c9894b10fa85bdaded9b74773f47/images/googleplay.png" />
-                            </a>
-                        </td>
-                    </tr>
-                    <!-- End of Email Content -->
-                </table>
-            </td>
-        </tr>
-
-        <tr>
-            <td align="center">
-                <table border="0" cellpadding="0" cellspacing="0" class="container-2">
-                    <!-- Your Email Content Here -->
-                    <tr>
-                        <td colspan="2">
-                            <hr />
-                        </td>
-                    </tr>
-
-                    <!-- End of Email Content -->
-                </table>
-            </td>
-        </tr>
-
-        <tr>
-            <td align="center">
-                <table border="0" cellpadding="0" cellspacing="0" class="container-2">
-                    <!-- Your Email Content Here -->
-                    <tr>
-                        <td colspan="2">
-                            <img class="footer-logo"
-                                src="https://ci3.googleusercontent.com/meips/ADKq_NYdPhhDJdumiEwcbpjsYscw95JfEMlKykO5enyiagFf8FHSfxCyCGucTi-fxdLw0JdUu3Tpr1FZ1sjuXp47a5iDYYKb2VXBB8fUUcgR-Fu6ONVzvgglMvh0EAQk3mRPjsv3ooVm2um36iPtAiijUJwUYXbxw6yFaL7EXaiiLZewfYSGT2yxmKQRKdJGMU2HosP1ghms1rAFiQybyFm69gOp7dlxCC4=s0-d-e1-ft#https://efonaub.stripocdn.email/content/guids/CABINET_7b786ee7e73fcee9edab2500605d2e96f6a0c9894b10fa85bdaded9b74773f47/images/lightlogo_kCj.png"
-                                alt="" />
-                    <tr class="footer-row">
-                        <td class="footer-col-1" colspan="1">
-                            <p class="footer-col-title">Address</p>
-                            <p class="footer-col-text">
-                                © 2023 Netevia Group LLC 3363 NE 163rd St, Suite 606 North
-                                Miami Beach, FL 33160
-                            </p>
-                        </td>
-                        <td class="footer-col-2" colspan="2">
-                            <p class="footer-col-title">Contact information</p>
-                            <table>
-                                <tr class="footer-col-row">
-                                    <td class="logoBoxTell">
-                                        <img class="logoTell" width="16"
-                                            src="https://link-img-eight.vercel.app/footer/PhoneOutlined.png" />
-                                    </td>
-                                    <td class="footer-col-text-tel">855-479-4411</td>
-                                </tr>
-                                <tr class="footer-col-row">
-                                    <td>
-                                        <img width="16"
-                                            src="https://link-img-eight.vercel.app/footer/EmailOutlined.png" />
-                                    </td>
-                                    <td class="footer-col-text-email">
-                                        <a href="#">card@netevia.com</a>
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                        <td class="hidden-text" style="opacity: 0; user-select: none">
-                            saom
-                        </td>
-                    </tr>
-                    <tr class="footer-col-2-tr">
-                        <td>
-                            <p class="footer-col-title">Contact information</p>
-                            <table>
-                                <tr class="footer-col-row">
-                                    <td>
-                                        <img width="16"
-                                            src="https://link-img-eight.vercel.app/footer/PhoneOutlined.png" />
-                                    </td>
-                                    <td class="footer-col-text-tel">855-479-4411</td>
-                                </tr>
-                                <tr class="footer-col-row">
-                                    <td>
-                                        <img width="16"
-                                            src="https://link-img-eight.vercel.app/footer/EmailOutlined.png" />
-                                    </td>
-                                    <td class="footer-col-text-email">
-                                        <a href="#">card@netevia.com</a>
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-            </td>
-        </tr>
-
-        <!-- End of Email Content -->
-    </table>
-    </td>
+  <br />
+  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr class="glavniy-logo">
+      <td>
+        <img class="dark-img logo"
+          src="https://ci3.googleusercontent.com/meips/ADKq_NYdPhhDJdumiEwcbpjsYscw95JfEMlKykO5enyiagFf8FHSfxCyCGucTi-fxdLw0JdUu3Tpr1FZ1sjuXp47a5iDYYKb2VXBB8fUUcgR-Fu6ONVzvgglMvh0EAQk3mRPjsv3ooVm2um36iPtAiijUJwUYXbxw6yFaL7EXaiiLZewfYSGT2yxmKQRKdJGMU2HosP1ghms1rAFiQybyFm69gOp7dlxCC4=s0-d-e1-ft#https://efonaub.stripocdn.email/content/guids/CABINET_7b786ee7e73fcee9edab2500605d2e96f6a0c9894b10fa85bdaded9b74773f47/images/lightlogo_kCj.png"
+          alt="" title="light" />
+      </td>
     </tr>
 
     <tr>
-        <td align="center">
-            <table border="0" cellpadding="0" cellspacing="0" class="container-2" style="padding-top: 0 !important">
-                <!-- Your Email Content Here -->
-                <tr>
-                    <td colspan="2">
-                        <p class="footer-text-full">
-                            Netevia is not a bank. Banking services provided by Sutton
-                            Bank, Member FDIC. Should the member bank holding your balance
-                            fail, you are insured for up to $250,000 of your money in the
-                            account.
-                        </p>
-                    </td>
-                </tr>
-                <tr class="footer-social">
-                    <td style="display: inline-block">
-                        <a href="#" target="_blank">
-                            <img src="https://link-img-eight.vercel.app/footer/facebook.png" />
-                        </a>
-                    </td>
-                    <td style="display: inline-block">
-                        <a href="#" target="_blank">
-                            <img src="https://link-img-eight.vercel.app/footer/instagram.png" />
-                        </a>
-                    </td>
-                    <td style="display: inline-block">
-                        <a href="#" target="_blank">
-                            <img src="https://link-img-eight.vercel.app/footer/x.png" />
-                        </a>
-                    </td>
-                </tr>
+      <td align="center">
+        <table border="0" cellpadding="0" cellspacing="0" class="container">
+          <!-- Your Email Content Here -->
+          <tr>
+            <td>
+              <div class="box-logo" style="margin: 0; padding: 0; text-align: center">
+                <img src="./LockResetOutlined.png" />
+              </div>
+              <h2 class="box-title">
+                Login Sent
+              </h2>
+              <p class="box-texts .a__link">
+                Dear <b>[Applicant Name],</b> <br /><br />
 
-                <!-- End of Email Content -->
-            </table>
-        </td>
+                Your login credentials were just sent to your email. <br><br>
+                If this wasn't you, please change your password and contact us immediately at <a href="tel: (855) 479-4411">(855) 479-4411</a> or email us at 
+                <a href="mailto: card@netevia.com">card@netevia.com</a> <br><br>
+                Customer Services Team is available Monday-Friday from 9:00am to 8:00pm
+              </p>
+              <p class="box-texts-2">
+                Sincerely, <br />
+                Netevia Team 
+              </p>
+              <!-- <p class="box-texts-3">
+                If you have any questions, don't hesitate to contact us at
+                <br />
+                <a href="tel:855-479-4411">855-479-4411</a> or email at
+                <a href="mailto: card@netevia.com">card@netevia.com.</a>
+                <br />
+
+                Our Customer Services Team is available Monday-Friday from
+                9:00 am to 8:00 pm EST.
+              </p> -->
+            </td>
+          </tr>
+          <!-- End of Email Content -->
+        </table>
+      </td>
     </tr>
-    <br />
 
-    <!-- <tr>
+    <tr>
+      <td align="center">
+        <table border="0" cellpadding="0" cellspacing="0" class="container container-margin">
+          <!-- Your Email Content Here -->
+          <tr>
+            <td colspan="2">
+              <h2 class="social-title">Get the Netevia app!</h2>
+              <p class="social-texts">
+                Get the most of Netevia by installing our mobile app.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="social-img-1">
+              <a target="_blank" href="#">
+                <img
+                  src="https://ci3.googleusercontent.com/meips/ADKq_NaayLpuC8nxlD5E5UKD5aet6Fkt4CHELlR2JJ44LCKOjcfsGjkLpGhfNyrDZ5Tgj3rY2SwVKDhv4vXcHabw0OCDgStmH6znMyxFw6FHpEjVIfBS_oIC7XSlGiMKTREoufr_GE6iC7bIRfNPBhxoaE9bBi0HpXyQjDEncJZU7SklfNARwOwxRgocoXWshQvg4gtXHEmzfFXGBWfd00geugx7=s0-d-e1-ft#https://efonaub.stripocdn.email/content/guids/CABINET_7b786ee7e73fcee9edab2500605d2e96f6a0c9894b10fa85bdaded9b74773f47/images/appstore.png" />
+              </a>
+            </td>
+            <td class="social-img-2">
+              <a target="_blank" href="#">
+                <img
+                  src="https://ci3.googleusercontent.com/meips/ADKq_NbwMbWqYa44Yky_bhRRU9se2WU62jbq1SUYLQob38BZO3N2mfFRoOwfJQaf0sriFVnsmEx_qnXI8oGYp2DfRzlLJiLfL8BFJM9ywytcdLDSJRHRX_tbp4b-YTG2drh9aTKvRbV9j4vt-RCJJWxenjB52FQ_HYctYZhwEpNQXFVi8eo-5LPvCJiY1X3ZlBqEMOXLsnIgf5Vk_2GI-AkIoRKRGas=s0-d-e1-ft#https://efonaub.stripocdn.email/content/guids/CABINET_7b786ee7e73fcee9edab2500605d2e96f6a0c9894b10fa85bdaded9b74773f47/images/googleplay.png" />
+              </a>
+            </td>
+          </tr>
+          <!-- End of Email Content -->
+        </table>
+      </td>
+    </tr>
+
+    <tr>
+      <td align="center">
+        <table border="0" cellpadding="0" cellspacing="0" class="container-2">
+          <!-- Your Email Content Here -->
+          <tr>
+            <td colspan="2">
+              <hr />
+            </td>
+          </tr>
+
+          <!-- End of Email Content -->
+        </table>
+      </td>
+    </tr>
+
+    <tr>
+      <td align="center">
+        <table border="0" cellpadding="0" cellspacing="0" class="container-2">
+          <!-- Your Email Content Here -->
+          <tr>
+            <td colspan="2">
+              <img class="footer-logo"
+                src="https://ci3.googleusercontent.com/meips/ADKq_NYdPhhDJdumiEwcbpjsYscw95JfEMlKykO5enyiagFf8FHSfxCyCGucTi-fxdLw0JdUu3Tpr1FZ1sjuXp47a5iDYYKb2VXBB8fUUcgR-Fu6ONVzvgglMvh0EAQk3mRPjsv3ooVm2um36iPtAiijUJwUYXbxw6yFaL7EXaiiLZewfYSGT2yxmKQRKdJGMU2HosP1ghms1rAFiQybyFm69gOp7dlxCC4=s0-d-e1-ft#https://efonaub.stripocdn.email/content/guids/CABINET_7b786ee7e73fcee9edab2500605d2e96f6a0c9894b10fa85bdaded9b74773f47/images/lightlogo_kCj.png"
+                alt="" />
+          <tr class="footer-row">
+            <td class="footer-col-1" colspan="1">
+              <p class="footer-col-title">Address</p>
+              <p class="footer-col-text">
+                © 2023 Netevia Group LLC 3363 NE 163rd St, Suite 606 North
+                Miami Beach, FL 33160
+              </p>
+            </td>
+            <td class="footer-col-2" colspan="2">
+              <p class="footer-col-title">Contact information</p>
+              <table>
+                <tr class="footer-col-row">
+                  <td class="logoBoxTell">
+                    <img class="logoTell" width="16" src="https://link-img-eight.vercel.app/footer/PhoneOutlined.png" />
+                  </td>
+                  <td class="footer-col-text-tel">855-479-4411</td>
+                </tr>
+                <tr class="footer-col-row">
+                  <td>
+                    <img width="16" src="https://link-img-eight.vercel.app/footer/EmailOutlined.png" />
+                  </td>
+                  <td class="footer-col-text-email">
+                    <a href="#">card@netevia.com</a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+            <td class="hidden-text" style="opacity: 0; user-select: none">
+              saom
+            </td>
+          </tr>
+          <tr class="footer-col-2-tr">
+            <td>
+              <p class="footer-col-title">Contact information</p>
+              <table>
+                <tr class="footer-col-row">
+                  <td>
+                    <img width="16" src="https://link-img-eight.vercel.app/footer/PhoneOutlined.png" />
+                  </td>
+                  <td class="footer-col-text-tel">855-479-4411</td>
+                </tr>
+                <tr class="footer-col-row">
+                  <td>
+                    <img width="16" src="https://link-img-eight.vercel.app/footer/EmailOutlined.png" />
+                  </td>
+                  <td class="footer-col-text-email">
+                    <a href="#">card@netevia.com</a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+      </td>
+    </tr>
+
+    <!-- End of Email Content -->
+  </table>
+  </td>
+  </tr>
+
+  <tr>
+    <td align="center">
+      <table border="0" cellpadding="0" cellspacing="0" class="container-2" style="padding-top: 0 !important">
+        <!-- Your Email Content Here -->
+        <tr>
+          <td colspan="2">
+            <p class="footer-text-full">
+              Netevia is not a bank. Banking services provided by Sutton
+              Bank, Member FDIC. Should the member bank holding your balance
+              fail, you are insured for up to $250,000 of your money in the
+              account.
+            </p>
+          </td>
+        </tr>
+        <tr class="footer-social">
+          <td style="display: inline-block">
+            <a href="#" target="_blank">
+              <img src="https://link-img-eight.vercel.app/footer/facebook.png" />
+            </a>
+          </td>
+          <td style="display: inline-block">
+            <a href="#" target="_blank">
+              <img src="https://link-img-eight.vercel.app/footer/instagram.png" />
+            </a>
+          </td>
+          <td style="display: inline-block">
+            <a href="#" target="_blank">
+              <img src="https://link-img-eight.vercel.app/footer/x.png" />
+            </a>
+          </td>
+        </tr>
+
+        <!-- End of Email Content -->
+      </table>
+    </td>
+  </tr>
+  <br />
+
+  <!-- <tr>
       <td align="center"  style="padding: 20px 0">
           <h3 class="social-title">Get the Netevia app!</h3>
           <p class="social-text">Get the most of Netevia by installing our mobile app.</p>
       </td>
      
     </tr> -->
-    </table>
+  </table>
 </body>
 
 </html>
